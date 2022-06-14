@@ -34,6 +34,29 @@ namespace Inheritance
              *  
              * Creatively display the class member values 
              */
+
+            Bird bird1 = new Bird()
+            {
+                size = "4 feet",
+                feathersColor = "black and white",
+                birdType = "penguin",
+                canFly = false
+            };
+
+            Reptile reptile1 = new Reptile()
+            {
+                size = "8 cm",
+                skinColor = "green and brown",
+                reptileType = "gecko",
+                canRegenerate = true
+            };
+
+
+            Console.WriteLine($"the {bird1.birdType} is {bird1.feathersColor} and is {bird1.size} tall. Flight ability: {bird1.canFly}.");
+            Console.WriteLine();
+            Console.WriteLine($"the {reptile1.reptileType} is {reptile1.skinColor} and {reptile1.size} long. Regeberation status: {reptile1.canRegenerate}");
         }
+
+       
     }
 }
