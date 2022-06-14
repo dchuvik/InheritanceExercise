@@ -43,20 +43,29 @@ namespace Inheritance
                 canFly = false
             };
 
+            Bird eagle = new Bird()
+            {
+                tail = true,
+                canFly = true,
+                color = "white and dark brown",
+                birdType = "Bald Eagle",
+            };
+
             Reptile reptile1 = new Reptile()
             {
                 size = "8 cm",
                 skinColor = "green and brown",
                 reptileType = "gecko",
-                canRegenerate = true
+                canRegenerate = true,
+                tail = true
             };
 
 
-            Console.WriteLine($"the {bird1.birdType} is {bird1.feathersColor} and is {bird1.size} tall. Flight ability: {bird1.canFly}.");
+            Console.WriteLine($"the {bird1.birdType} is {bird1.feathersColor} and is {bird1.size} tall. Can they fly? {bird1.canFly}.");
             Console.WriteLine();
-            Console.WriteLine($"the {reptile1.reptileType} is {reptile1.skinColor} and {reptile1.size} long. Regeberation status: {reptile1.canRegenerate}");
+            Console.WriteLine($"the {reptile1.reptileType} is {reptile1.skinColor} and {reptile1.size} long. Can they regenerate {reptile1.canRegenerate}");
         }
 
-       
+
     }
 }
